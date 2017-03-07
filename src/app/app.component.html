@@ -1,0 +1,7 @@
+<h1> Youtub Search</h1>
+<input [FormContro]="search">
+<div *ngFor="let video of results | async">
+  <h3> le titre :{{video.snippet.title}}</h3>
+  <h3> lien vers vedio:{{vedio.snippet.url}}</h3>
+  <h3> image{{video.snippet.images}}</h3>
+</div>
